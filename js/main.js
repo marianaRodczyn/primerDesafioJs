@@ -35,18 +35,17 @@ switch(emocion){
 }
 
 function respuestaEmocion(emocion){
-  
-    
+    let respuesta
     if(emocion==="Feliz"){
-        return Disfruta;
+        alert("Disfruta el momento");
     }else if(emocion==="Alegre"){
-        return Registralo;
+        alert("Registralo y ubicalo en una parte del cuerpo") ;
     }else if(emocion==="Neutro"){
-        return Medita;
+        alert("Medita y contemplate en tu entorno");
     }else if(emocion==="Triste"){
-        return Baila;
+        alert("Saca a bailar la tristeza");
     }else if(emocion==="Enojado"){
-        return Sacudite;
+        alert("Usa esa energia en una actividad fisica, corres ? hacelo con intervalos intensos y transpira");
     }
 }
 
@@ -55,6 +54,61 @@ function respuestaEmocion(emocion){
 ingresaNombre();
 let emocion = mostrarEmociones();
 let respuesta = respuestaEmocion(emocion);
+/*
+function persona(nombre,edad,nacionalidad){
+    this.nombre = nombre
+    this.edad = edad
+    this.nacionalidad = nacionalidad
+}
+
+const persona1 = new persona("Juana de Arco",29 ,"Francia" )
+console.log(persona1)
+
+let persona;*/
 
 
 
+
+
+/*const persona = {
+    nombre : "Juana",
+    apellido : "de Arco",
+    edad : "29",
+}
+persona.pais= "Francia"
+console.log(persona)*/
+
+
+
+let registroCalendario = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+
+console.log(bisiesto(2020))
+
+function escribeMes(mes){
+
+}
+
+function cantidadDias(mes){
+
+}
+
+function bisiesto(){
+    return((anioActual % 100 !==0) && (anioActual % 4 ===0) || (anioActual % 400 ===0)) 
+
+    }
+
+function starDia(){
+
+}
+
+function mesAnterior(){
+
+}
+
+function mesProximo(){
+
+}
+
+function nuevaFecha(){
+
+}
